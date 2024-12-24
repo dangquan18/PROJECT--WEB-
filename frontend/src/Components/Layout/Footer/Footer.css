@@ -1,0 +1,96 @@
+/* Footer container */
+.booking-footer {
+  background-color: white;
+  padding: 50px 0;
+  font-family: "Arial", sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.booking-footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.booking-footer-section {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.booking-footer h3 {
+  font-size: 1.5em;
+  color: rgb(60, 124, 180); /* Màu xanh đậm cho tiêu đề */
+  margin-bottom: 20px;
+}
+
+.booking-footer p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+}
+
+.booking-footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.booking-footer ul li {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.booking-footer ul li i {
+  margin-right: 10px;
+  color: #ffd700; /* Màu vàng cho biểu tượng */
+}
+
+.booking-footer a {
+  color: #1a237e;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.booking-footer a:hover {
+  color: #ffd700; /* Màu vàng khi hover */
+}
+
+.booking-social-links a {
+  margin: 0 10px;
+  color: #333;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+
+.booking-social-links a:hover {
+  color: #ffd700; /* Màu vàng khi hover */
+}
+
+/* Footer Bottom */
+.booking-footer-bottom {
+  background-color: white;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.booking-footer-bottom p {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.payment-methods {
+  margin-top: 10px;
+}
+
+.payment-methods i {
+  font-size: 1.8em;
+  color: white;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.payment-methods i:hover {
+  color: #ffd700; /* Màu vàng khi hover */
+}

@@ -1,0 +1,241 @@
+.app-container {
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+.content-wrapper {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* Room Header */
+.room-header {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.image-container {
+  position: relative;
+  height: 400px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gradient-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+}
+
+.image-container h1 {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Room Info */
+.room-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .room-info {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #00b050;
+  margin-top: 35px;
+}
+
+.info-content .label {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.info-content .value {
+  font-weight: 500;
+}
+
+/* Equipment Section */
+.equipment-section {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.equipment-section h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.equipment-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .equipment-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.equipment-item {
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  transition: border-color 0.2s;
+}
+
+.equipment-item:hover {
+  border-color: #2563eb;
+}
+
+.equipment-item h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.equipment-item p {
+  color: #4b5563;
+}
+
+/* Contact Section */
+.contact-section {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.contact-text {
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.phone-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #eff6ff;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.phone-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #2563eb;
+}
+
+.phone-number {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.btn-book {
+  background: linear-gradient(90deg, #ff7eb3, #ff758c);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.btn-book:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #ff758c, #ff7eb3);
+}
+
+.btn-book:focus {
+  outline: none;
+}
+
+/* Container button */
+.booking-button-container {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Modal */
+.ant-modal-content {
+  padding: 20px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Header modal */
+.ant-modal-title {
+  font-weight: bold;
+  font-size: 24px;
+  color: #ff6f61;
+}
+
+/* Nội dung modal */
+.ant-modal-body p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.ant-modal-body strong {
+  color: black;
+}
+
+/* Nút Xác nhận và Hủy */
+.ant-btn-primary {
+  background: #0099ff;
+  color: #000;
+  font-weight: bold;
+}
+
+.ant-btn-primary:hover {
+  background: #ffe082;
+}
+
+.ant-btn-default {
+  color: #777;
+  font-weight: bold;
+}
+
+.ant-btn-default:hover {
+  color: #555;
+}

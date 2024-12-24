@@ -1,0 +1,48 @@
+/* Phần hero search */
+.hero-search {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Chiều cao của phần hero */
+  background-image: url("https://decoxdesign.com/upload/images/thiet-ke-phong-hop-10-decox-design.jpg"); /* Thay thế bằng đường dẫn ảnh của bạn */
+  background-size: cover; /* Đảm bảo ảnh bao phủ toàn bộ phần tử mà không bị kéo dãn */
+  background-position: center center; /* Căn giữa ảnh cả theo chiều ngang và chiều dọc */
+  background-repeat: no-repeat; /* Không lặp lại ảnh */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(31, 69, 103);
+  text-align: center;
+}
+
+.hero-content {
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.search {
+  background-color: rgb(31, 69, 103) /* Màu vàng cho nút */;
+  color: white; /* Màu chữ của nút */
+  font-size: 1.1rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search:hover {
+  background-color: blue; /* Màu nút thay đổi khi hover */
+}

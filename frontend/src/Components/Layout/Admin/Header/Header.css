@@ -1,0 +1,51 @@
+/* Đặt màu nền và kiểu chữ cho toàn bộ header */
+.header {
+  display: flex;
+  justify-content: space-between; /* Đẩy các phần tử con về hai đầu */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  padding: 20px 40px; /* Khoảng cách giữa nội dung và biên của header */
+  background-color: white; /* Màu nền của header */
+  color: black; /* Màu chữ */
+}
+
+/* Phần tử bên trái, chứa tiêu đề */
+.header__left h1 {
+  font-size: 24px; /* Kích thước chữ cho tiêu đề */
+  font-weight: bold;
+  margin: 0; /* Loại bỏ margin mặc định */
+}
+
+/* Phần tử bên phải, chứa thông tin người dùng và nút đăng xuất */
+.header__right {
+  display: flex;
+  align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+  gap: 20px; /* Khoảng cách giữa các phần tử */
+}
+
+/* Phần tử chứa icon và tên người dùng */
+.header__user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.username {
+  font-size: 16px; /* Kích thước chữ cho tên người dùng */
+  color: black; /* Màu chữ */
+  font-weight: 500;
+}
+
+/* Nút đăng xuất */
+.logout-btn {
+  padding: 5px 15px;
+  background-color: #ff4d4f; /* Màu nền đỏ cho nút đăng xuất */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #f5222d; /* Màu đỏ đậm khi hover */
+}

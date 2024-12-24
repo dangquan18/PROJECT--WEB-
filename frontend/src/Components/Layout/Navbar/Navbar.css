@@ -1,0 +1,105 @@
+/* Định dạng chung cho Navbar */
+.navbar {
+  background-color: #ffffff; /* White background */
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center; /* Center the navbar container */
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Full width */
+  position: sticky; /* Navbar sticks to the top */
+  top: 0;
+  z-index: 1000;
+  margin: 0; /* Xóa margin nếu có */
+  box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước */
+}
+
+/* Navbar Container */
+.navbarContainer {
+  display: flex;
+  justify-content: space-between; /* Space between logo and items */
+  align-items: center;
+  width: 100%; /* Chiếm toàn bộ chiều rộng */
+  max-width: 1700px; /* Giới hạn chiều rộng tối đa */
+  margin: 0 auto; /* Căn giữa navbar */
+  box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng đến chiều rộng */
+}
+
+/* Navbar Logo */
+.navbarLogo {
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(60, 124, 180); /* Dark blue */
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  margin-right: 50px; /* Tăng khoảng cách giữa logo và các mục nav */
+}
+
+.navbarLogo:hover {
+  color: #f39c12; /* Yellow hover effect */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Navigation Items */
+.navItems {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Điều chỉnh khoảng cách giữa các item */
+}
+
+.navLink {
+  color: #2c3e50;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.navLink:hover {
+  color: rgb(60, 124, 180); /* Yellow hover effect */
+  transform: translateY(-3px); /* Lift on hover */
+}
+
+/* User Info and Logout Button */
+.navUser {
+  color: rgb(60, 124, 180);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.logoutBtn {
+  margin-top: 5px;
+  background-color: rgb(60, 124, 180); /* Bright red */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.logoutBtn:hover {
+  background-color: #c0392b; /* Darker red */
+  transform: translateY(-2px); /* Lift button on hover */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .navbarContainer {
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Đảm bảo container chiếm toàn bộ chiều rộng */
+  }
+
+  .navItems {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .navbarLogo {
+    margin-bottom: 20px;
+  }
+}

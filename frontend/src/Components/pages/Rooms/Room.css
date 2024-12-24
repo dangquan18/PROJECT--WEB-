@@ -1,0 +1,161 @@
+.search-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Search Inputs Container */
+.search-inputs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* Input Styles */
+.input,
+.ant-picker {
+  padding: 0.75rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  background-color: white;
+  transition: all 0.2s;
+  flex: 1;
+  min-width: 200px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.1);
+}
+
+/* Dropdown Styles */
+.dropdown {
+  width: 15%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  background-color: white;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.dropdown:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
+/* Search Button */
+.btn-search {
+  width: 10%;
+  padding: 0.75rem 1.5rem;
+  background-color: rgb(60, 124, 180);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-bottom: 1.5rem;
+}
+
+.btn-search:hover {
+  background-color: #4338ca;
+}
+
+/* Error Message */
+.error-message {
+  color: #dc2626;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+/* Room Cards Container */
+.room-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Room Card */
+.room-card {
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.room-card:hover {
+  transform: translateY(-4px);
+}
+
+.room-card h3 {
+  padding: 1rem;
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.room-card p {
+  padding: 0.5rem 1rem;
+  margin: 0;
+  color: #4b5563;
+}
+
+.room-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Details Button */
+.btn-details {
+  width: calc(100% - 2rem);
+  margin: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: rgb(60, 124, 180);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-details:hover {
+  background-color: #4338ca;
+}
+
+/* Loading State */
+.loading {
+  text-align: center;
+  color: #6b7280;
+  padding: 2rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .search-inputs {
+    flex-direction: column;
+  }
+
+  .input,
+  .ant-picker {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .room-cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+.content {
+  text-align: center;
+  color: rgb(60, 124, 180);
+}
